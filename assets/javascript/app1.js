@@ -1,5 +1,6 @@
 
 function displayRecipe(){
+    window.onload = function() {
     var request = sessionStorage.getItem("dishName")
     var queryURL = "https://www.themealdb.com/api/json/v1/1/search.php?s="+ request;
     console.log(queryURL)
@@ -53,8 +54,9 @@ function displayRecipe(){
                 ingredientJSON[`name`] = productName
                 amazonJson.ingredients.push(ingredientJSON)
             }
-            $('#amazon-input').val(JSON.stringify(amazonJson))
+            $('#amazon-input').val(JSON.stringify(amazonJson))        
     })
+    }
 }
     
 $(document).ready(function() {

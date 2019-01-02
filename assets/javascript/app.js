@@ -20,7 +20,7 @@ function displayRecipe(){
             imageDiv.attr('src', result[i].strMealThumb)
             nameDiv.append('<h3>'+result[i].strMeal+'</h3>')
             $(document).on( "focus", '#' +class1, function() {
-                localStorage.setItem("dishName", $(this).attr('fullName'))
+                sessionStorage.setItem("dishName", $(this).attr('fullName'))
                 window.open('recipe.html', '_blank')
             })
             descriptionDiv.append(result[i].strInstructions)

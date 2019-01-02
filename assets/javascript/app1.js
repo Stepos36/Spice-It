@@ -1,6 +1,6 @@
 
 function displayRecipe(){
-    var request = localStorage.getItem("dishName")
+    var request = sessionStorage.getItem("dishName")
     var queryURL = "https://www.themealdb.com/api/json/v1/1/search.php?s="+ request;
     console.log(queryURL)
     $.ajax({

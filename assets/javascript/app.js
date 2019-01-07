@@ -51,7 +51,7 @@ function displayRecipe() {
         href: 'recipe/'        
       });
       var mealCard = createMealCard(mealId, imgSrc, name, desc);
-      $('#result-table').append(recipeLink.append(mealCard));
+      $('#result-table').append(recipeLink.append(mealCard)).attr('style', 'text-align:center; justify-content: center');
       localStorage.setItem('request', request);
     }
   });
@@ -65,6 +65,30 @@ $(document).ready(function() {
   });
 
   $('#result-table').on('mouseover', '.meal-card', function() {
-    localStorage.setItem('mealId', $(this).attr('data-mealId'));
+    let key = $(this).attr('data-mealId');
+    let request = indexedDB.open('dishDatabase', 1),
+    db,
+    tx,
+    store;
+    request.onupgradeneeded = function(e) {
+      let db = request.result,
+      store = db.createObjectStore('dishName', {keyPath: 'dishName1'});
+    };
+    request.onerror = function(e) {
+      console.log('error'+e.targer.errorCode);
+    };
+    request.onsuccess = function(e) {
+      db = request.result;
+      tx = db.transaction("dishName", 'readwrite');
+      store = tx.objectStore('dishName');
+      db.onerror = function(e) { 
+        console.log('error' + e.target.errorCode)
+      }
+      store.put({dishName1: 1, dishName: key})
+      let q1 = store.get(1)
+      q1.onsuccess = function() {
+        console.log(q1.result.dishName)
+      }
+    }
   });
 });

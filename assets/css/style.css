@@ -1,13 +1,3 @@
-/* anthony css */
-.meal-card {
-  height: 32rem;
-  width: 20rem;
-  margin: 20px 5px 24px 5px;
-  display: inline-block;
-  vertical-align: top;
-}
-/* end anthony css */
-
 body {
   background: url('../images/Cover.png');
   background-size: cover;
@@ -35,6 +25,9 @@ h1 {
 }
 a {
   color: black;
+}
+#appName a {
+  text-decoration: none
 }
 .loginBtn {
   float: right;
@@ -94,7 +87,13 @@ a {
   left: 60%;
   transform: translate(-50%, -50%);
 }
-
+.meal-card {
+  height: 32rem;
+  width: 20rem;
+  margin: 20px 5px 24px 5px;
+  display: inline-block;
+  vertical-align: top;
+}
 /* footer */
 footer {
   background-color: #8b8b8b;

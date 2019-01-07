@@ -163,11 +163,9 @@ footer {
   #ingredients1 {
     display: none;
   }
+  .mealVideo {
+    padding-bottom: 30%;
 }
-@media only screen and (min-width: 1024px) {
-  #ingredients2 {
-    display: none;
-  }
 }
 @media only screen and (max-width: 992px) {
   .mealVideo { 
@@ -178,14 +176,6 @@ footer {
   #phrase {
     display: none;
   }
-}
-@media only screen and (min-width: 992px) {
-  .mealVideo {
-    padding-bottom: 30%;
-}
-@media only screen and (max-width: 992px) {
-  .mealVideo {
-    padding-bottom: 45%;
 }
 @media only screen and (max-width: 768px) {
   .topbar-text {
@@ -223,4 +213,20 @@ footer {
   .topbar-text {
     display: none;
   }
+  #search-input {
+    width: 60%;
+    margin-right: 5px
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #ingredients2 {
+    display: none;
+  }
+  .mealVideo {
+    padding-bottom: 30%;
+}
+}
+@media only screen and (min-width: 992px) {
+  .mealVideo {
+    padding-bottom: 30%;
 }

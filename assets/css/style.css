@@ -40,7 +40,7 @@ a {
   padding-left: 0px;
 }
 .navbar {
-  background-color: rgb(245, 184, 197, 0.4);
+  background-color: rgba(245, 184, 197, 0.4);
   border-bottom: ridge rgb(245, 184, 197) 2px;
   border-top: ridge rgb(245, 184, 197) 2px;
 }
@@ -50,7 +50,7 @@ a {
   padding-left: 30px;
 }
 #appName {
-  background-color: rgb(245, 184, 197, 0.2);
+  background-color: rgba(245, 184, 197, 0.2);
 }
 .appName-line {
   margin-bottom: 0;
@@ -76,7 +76,7 @@ a {
 
 /* main Container Div */
 .mainContainer {
-  background-color: rgb(255, 229, 236, 0.8);
+  background-color: rgba(255, 229, 236, 0.8);
 }
 
 .centered {

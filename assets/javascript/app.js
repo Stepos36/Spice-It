@@ -65,7 +65,7 @@ $(document).ready(function() {
   });
 
   $('#result-table').on('mouseover', '.meal-card', function() {
-    key = $(this).attr('data-mealId');
+    let key = $(this).attr('data-mealId');
     let request = indexedDB.open('dishDatabase', 1),
     db,
     tx,
@@ -92,7 +92,7 @@ $(document).ready(function() {
     }
   });
   $('#result-table').on('touchstart', '.meal-card', function() {
-    key = $(this).attr('data-mealId');
+    let key = $(this).attr('data-mealId');
     let request = indexedDB.open('dishDatabase', 1),
     db,
     tx,

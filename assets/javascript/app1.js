@@ -29,10 +29,14 @@ function displayRecipe() {
         imageDiv.attr('src', result[0].strMealThumb);
         nameDiv.append(result[0].strMeal);
         descriptionDiv.append(result[0].strInstructions);
-      
         var ingredientsDisplay = [];
         var ingredients = [];
         var quantities = [];
+        console.log(result[0].strYoutube)
+        var video = result[0].strYoutube
+        video1 = video.replace(/watch\?v=/g,'embed/')
+        console.log(video1)
+        $('.mealVideo').append('<iframe class="video" src="'+video1+'" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>')
         for (var j = 1; j <= 20; j++) {
           var ingredient = result[0][`strIngredient${j}`];
           var quantity = result[0][`strMeasure${j}`];
@@ -44,7 +48,7 @@ function displayRecipe() {
             ingredients.push(ingredient);
           }
         }
-        $('#ingredients').html(
+        $('.ingredients').html(
           '<strong>Ingredients: </strong>' + ingredientsDisplay
         );
         var amazonJson = {

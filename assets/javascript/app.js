@@ -48,7 +48,7 @@ function displayRecipe() {
       var name = result[i].strMeal;
       var desc = result[i].strInstructions;
       var recipeLink = $('<a>', {
-        href: 'recipe/'        
+        href: 'recipe/index.html'        
       });
       var mealCard = createMealCard(mealId, imgSrc, name, desc);
       $('#result-table').append(recipeLink.append(mealCard)).attr('style', 'text-align:center; justify-content: center');

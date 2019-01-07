@@ -48,7 +48,7 @@ function displayRecipe() {
       var name = result[i].strMeal;
       var desc = result[i].strInstructions;
       var recipeLink = $('<a>', {
-        href: 'recipe/index.html',
+        href: 'recipe/',
         target: '_blank',        
       });
       var mealCard = createMealCard(mealId, imgSrc, name, desc);

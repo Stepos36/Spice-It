@@ -48,8 +48,7 @@ function displayRecipe() {
       var name = result[i].strMeal;
       var desc = result[i].strInstructions;
       var recipeLink = $('<a>', {
-        href: 'recipe/',
-        target: '_blank',        
+        href: 'recipe/'        
       });
       var mealCard = createMealCard(mealId, imgSrc, name, desc);
       $('#result-table').append(recipeLink.append(mealCard));
@@ -66,6 +65,6 @@ $(document).ready(function() {
   });
 
   $('#result-table').on('mouseover', '.meal-card', function() {
-    sessionStorage.setItem('mealId', $(this).attr('data-mealId'));
+    localStorage.setItem('mealId', $(this).attr('data-mealId'));
   });
 });

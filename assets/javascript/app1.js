@@ -1,5 +1,5 @@
 function displayRecipe() {
-  var request = sessionStorage.getItem('mealId');
+  var request = localStorage.getItem('mealId');
   var queryURL =
     'https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + request;
 

@@ -67,6 +67,7 @@ a {
   padding:0;
 }
 #search-input {
+  margin-right: 30px;
   padding: 20px;
   float: right;
 }
@@ -220,6 +221,9 @@ footer {
     width: auto;
     vertical-align: middle;
   }
+  .appName-line {
+    font-size: 35px;
+  }
 }
 @media only screen and (max-width: 596px) {
   .topbar-text {
@@ -227,7 +231,7 @@ footer {
   }
   #search-input {
     width: 60%;
-    margin-right: 5px
+    margin-right: 15px
   }
 }
 @media only screen and (min-width: 1024px) {

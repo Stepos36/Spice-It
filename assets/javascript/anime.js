@@ -60,7 +60,7 @@ searchBtn.addEventListener('click', function(){
         opacity: [0,1],
         duration: 7000
     })
-},200)
+},500)
 })
 
 

@@ -90,7 +90,8 @@ a {
 /* main Container Div */
 .mainContainer {
   background-color: rgba(184, 184, 184, 0.8);
-  margin-bottom: 40px
+  margin-bottom: 40px;
+  padding-bottom: 20px
 }
 
 .centered {

@@ -8,7 +8,7 @@ function createMealCard(mealId, imgSrc, name, desc) {
   var cardDiv = $('<div>', { 
     class: 'card meal-card',
     'data-mealId': mealId,
-    style: 'opacity:0'
+    style: 'opacity:0' 
   });
   var imageDiv = $('<img>', { 
     class: 'meal-image w-100',

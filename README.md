@@ -29,7 +29,7 @@ Once you click on that button, you'll be transferred to the Amazon Fresh website
 will be displayed on your screen. All you need to do is just put them in your cart and checkout.
 
 _Typical workflow:_
-[Spice-It](assets/images/readme.gif)
+![Spice-It](assets/images/readme.gif)
 
 _This web application was created using following technologies:_
 * **HTML**
